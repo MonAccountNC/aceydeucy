@@ -1,0 +1,38 @@
+<div class="back-green text-white fullscreen">
+    <div class="container">
+
+        <div class="spacer"></div>
+
+        <div class="row text-center">
+            <div class="col-6 card-right"><img [src]="card1.image"></div>
+            <div class="col-6 card-left"><img [src]="card2.image"></div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="div-container">
+                    <img [src]="card3.image" (click)="playPlayer()">
+                    <div class="centered" (click)="playPlayer()">{{ cardMessage }}</div>
+                </div>
+
+                <div class="spacer-small"></div>
+                <div class="buttons">
+                    <input type="button" (click)="pass()" [value]="PassDeal" [title]="PassDeal"
+                    *ngIf="getActionText(actionTextEnum.Next) == false">
+                    <input type="button" (click)="playGame()" value="Shuffle" title="Shuffle"
+                    *ngIf="getActionText(actionTextEnum.Next)">
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-12">
+                Bet ${{ bet }}
+                <mat-slider min="1" [max]="winnings" [step]="5" [value]="bet" (input)="changeBet($event)"
+                [disabled]="isBetDisabled()"></mat-slider> of ${{ winnings }}
+            </div>
+        </div>
+    </div>
+</div>

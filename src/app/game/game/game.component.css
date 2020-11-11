@@ -1,0 +1,105 @@
+.fullscreen {
+    height: 100%;
+    width: 100%;
+}
+
+.back-green {
+    background-color: green;
+}
+
+.text-white {
+    color: white;
+}
+
+.spacer {
+    min-height: 8px;
+}
+
+.spacer-small {
+    min-height: 2px;
+}
+
+img {
+    height: 128px;
+}
+
+.card-left {
+    text-align: left;
+}
+
+.card-right {
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.textVBottom{
+    vertical-align: bottom;
+}
+
+.textVMiddle{
+    vertical-align: middle;
+}
+
+.buttons {
+    min-height: 32px;
+}
+
+input[type="button"]{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 16px;
+}
+
+input[type="button"]:hover {background-color: #0f4b0f}
+
+input[type="button"]:active {
+  background-color: #1c6d3f;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+::ng-deep .mat-accent .mat-slider-thumb {
+    background-color: gold;
+} 
+::ng-deep .mat-accent .mat-slider-thumb-label {
+    background-color: darkgreen;
+} 
+::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: lightgreen;
+    width: 5px;
+} 
+
+.div-container {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    color: black;
+    background-color: yellow;
+    opacity: 90%;
+    cursor: pointer;
+}
+
